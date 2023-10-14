@@ -1,0 +1,48 @@
+$primaryColor: #171820;
+$writeColor: white;
+
+.infoContainer {
+    background-color: $primaryColor;
+    color: $writeColor;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .info {
+        width: 500px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        padding: 20px 20px 20px 100px;
+        
+        .detail {
+            margin: 12px 12px 12px 0;
+
+            display: flex;
+
+            .title {
+                min-width: 110px;
+            }
+        }
+        
+    }
+
+    .button {
+        user-select: none;
+        cursor: pointer;
+        margin-top: 40px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    .button:hover{
+        scale: 1.05;
+    }
+    .button:active{
+        scale: 0.95;
+    }
+}
