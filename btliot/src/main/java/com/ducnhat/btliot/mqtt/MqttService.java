@@ -118,7 +118,7 @@ public class MqttService {
 				timeNow);
 
 		try {
-//			dataRepository.save(data);
+			dataRepository.save(data);
 			messagingTemplate.convertAndSend("/topic/dht", data);
 		} catch (Exception e) {
 			e.printStackTrace();
